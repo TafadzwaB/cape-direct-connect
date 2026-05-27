@@ -3,7 +3,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import { areas } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "ExtraView Setup Cape Town | DStv ExtraView Installation",
+  title: "ExtraView Setup Cape Town",
   description:
     "Professional DStv ExtraView setup in Cape Town. Link multiple decoders, watch different channels on different TVs. Same-day installation. Call now.",
 };

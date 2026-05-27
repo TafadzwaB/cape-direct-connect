@@ -3,7 +3,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import { areas } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "OVHD Installation Cape Town | OpenView HD Satellite Setup",
+  title: "OVHD Installation Cape Town",
   description:
     "Professional OVHD / OpenView HD installation in Cape Town. Free-to-air channels, no monthly fees. One-time installation cost. Call for a free quote.",
 };

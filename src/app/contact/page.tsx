@@ -10,7 +10,7 @@ import {
 } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Cape Direct Connect",
+  title: "Contact Us",
   description:
     "Contact Cape Direct Connect for DStv installation, repairs, and TV wall mounting in Cape Town. Call, WhatsApp, or fill in our online form for a free quote.",
 };

@@ -3,7 +3,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import { areas } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "DStv Signal Repairs Cape Town | Fix Signal Loss & Pixelation",
+  title: "DStv Signal Repairs Cape Town",
   description:
     "Expert DStv signal repairs in Cape Town. Fix pixelation, weak signal, E48-32 errors, and dish misalignment. Same-day service. Call now.",
 };

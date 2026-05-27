@@ -3,7 +3,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import { areas } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "DStv Installation Cape Town | Professional DStv Installers",
+  title: "DStv Installation Cape Town",
   description:
     "Professional DStv installation in Cape Town. Single view, extra view and multi-room setups. Same-day service. Accredited installers. Call for a free quote.",
 };

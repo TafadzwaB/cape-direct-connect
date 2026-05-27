@@ -3,7 +3,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import { areas } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "DStv Repairs Cape Town | Fast Same-Day DStv Repair Service",
+  title: "DStv Repairs Cape Town",
   description:
     "Fast DStv repairs in Cape Town. Decoder faults, no signal, error codes, LNB replacement. Same-day service available. Call now for emergency repairs.",
 };

@@ -14,7 +14,9 @@ import {
 } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "Cape Direct Connect | DStv Installation & Repairs Cape Town",
+  title: {
+    absolute: "Cape Direct Connect | DStv Installation & Repairs Cape Town",
+  },
   description:
     "Professional DStv installation, repairs, signal fixes, ExtraView setup, TV wall mounting and OVHD installation across Cape Town. Same-day service available.",
 };

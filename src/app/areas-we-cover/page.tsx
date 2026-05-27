@@ -3,7 +3,7 @@ import Link from "next/link";
 import { areas, services, PHONE_HREF, WHATSAPP } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "Areas We Cover | DStv Installation & Repairs Across Cape Town",
+  title: "Areas We Cover in Cape Town",
   description:
     "Cape Direct Connect provides DStv installation and repair services across all Cape Town areas. Find your area and book a technician today.",
 };

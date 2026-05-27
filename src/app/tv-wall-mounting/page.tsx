@@ -3,7 +3,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import { areas } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "TV Wall Mounting Cape Town | Professional TV Installation",
+  title: "TV Wall Mounting Cape Town",
   description:
     "Professional TV wall mounting in Cape Town. All TV sizes, all wall types. Concealed cables, bracket supply and installation. Call for a free quote.",
 };
