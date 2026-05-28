@@ -47,7 +47,7 @@ export default function ServicePageLayout({
                   href={WHATSAPP}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-green-500 hover:bg-green-400 text-white font-bold px-6 py-3 rounded-lg transition"
+                  className="bg-green-600 hover:bg-green-500 text-white font-bold px-6 py-3 rounded-lg transition"
                 >
                   💬 WhatsApp Us
                 </a>
@@ -152,7 +152,7 @@ export default function ServicePageLayout({
               href={WHATSAPP}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-400 text-white font-bold px-8 py-3 rounded-lg transition"
+              className="bg-green-600 hover:bg-green-500 text-white font-bold px-8 py-3 rounded-lg transition"
             >
               💬 WhatsApp Us
             </a>

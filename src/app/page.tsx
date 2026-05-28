@@ -53,7 +53,7 @@ export default function HomePage() {
                   href={WHATSAPP}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-green-500 hover:bg-green-400 text-white font-bold px-8 py-4 rounded-lg text-lg transition shadow-lg"
+                  className="bg-green-600 hover:bg-green-500 text-white font-bold px-8 py-4 rounded-lg text-lg transition shadow-lg"
                 >
                   💬 WhatsApp Us
                 </a>
@@ -147,7 +147,7 @@ export default function HomePage() {
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
             🚨 Emergency DStv Repairs Available Now
           </h2>
-          <p className="text-red-100 mb-6 max-w-2xl mx-auto">
+          <p className="text-white/90 mb-6 max-w-2xl mx-auto">
             Lost signal? Decoder not working? Don&apos;t miss the big game. Our
             technicians are standing by for emergency call-outs across Cape Town.
           </p>
@@ -285,7 +285,7 @@ export default function HomePage() {
               href={WHATSAPP}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-400 text-white font-bold px-8 py-4 rounded-lg text-lg transition"
+              className="bg-green-600 hover:bg-green-500 text-white font-bold px-8 py-4 rounded-lg text-lg transition"
             >
               💬 WhatsApp Us
             </a>

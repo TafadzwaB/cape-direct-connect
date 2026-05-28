@@ -102,7 +102,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 py-4 text-center text-xs text-gray-500">
+        <div className="max-w-7xl mx-auto px-4 py-4 text-center text-xs text-gray-400">
           © {new Date().getFullYear()} {BUSINESS_NAME}. All rights reserved.
         </div>
       </div>

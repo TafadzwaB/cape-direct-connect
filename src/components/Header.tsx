@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { PHONE, PHONE_HREF, BUSINESS_NAME } from "@/data/siteData";
 
 const serviceLinks = [
@@ -25,6 +26,7 @@ export default function Header() {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const dropdownRef = useRef<HTMLLIElement>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -41,6 +43,13 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
+      {/* Skip to content */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[60] focus:bg-blue-700 focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:text-sm focus:font-semibold"
+      >
+        Skip to main content
+      </a>
       {/* Top bar */}
       <div className="bg-blue-900 text-white text-sm">
         <div className="max-w-7xl mx-auto px-4 py-1.5 flex justify-between items-center">
@@ -65,7 +74,8 @@ export default function Header() {
           <li>
             <Link
               href="/"
-              className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 transition"
+              className={`px-3 py-2 rounded-md text-sm font-medium transition ${pathname === "/" ? "text-blue-700 bg-blue-50" : "text-gray-700 hover:text-blue-700 hover:bg-blue-50"}`}
+              aria-current={pathname === "/" ? "page" : undefined}
             >
               Home
             </Link>
@@ -111,7 +121,8 @@ export default function Header() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 transition"
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition ${pathname === link.href ? "text-blue-700 bg-blue-50" : "text-gray-700 hover:text-blue-700 hover:bg-blue-50"}`}
+                  aria-current={pathname === link.href ? "page" : undefined}
                 >
                   {link.label}
                 </Link>
@@ -123,14 +134,15 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <a
             href={PHONE_HREF}
-            className="hidden md:inline-flex items-center gap-2 bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-800 transition"
+            className="hidden md:inline-flex items-center gap-2 bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-800 transition focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             Call Now
           </a>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100"
+            className="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
             aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
           >
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               {mobileOpen ? (
