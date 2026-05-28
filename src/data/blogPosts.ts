@@ -9,7 +9,7 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "how-to-fix-dstv-e48-32-error",
+    slug: "how-to-fix-signal-strength-on-dstv-e48-32-error-message",
     title: "E48-32 DStv Error Message — How To Fix Signal Issues",
     excerpt:
       "Learn how to troubleshoot and fix the DStv E48-32 signal not found error message caused by rain, plant growth, faulty LNBs, and more.",
@@ -50,7 +50,7 @@ A skew LNB on your DStv decoder can cause an issue whereby you are able to view 
 If you have signal problems with your DStv that you need help with, call us on 021 200 1537 or click on the WhatsApp icon to send us a quick message.`,
   },
   {
-    slug: "fix-dstv-decoder-after-load-shedding",
+    slug: "fix-dstv-decoder-not-working-after-load-shedding",
     title: "Fix DStv Decoder Not Working After Load Shedding",
     excerpt:
       "Step-by-step guide on how to protect your DStv decoder from load shedding damage and restore it if affected.",
@@ -99,7 +99,7 @@ Follow these steps to fix a DStv Explora that is stuck on loading after load she
 If the steps above did not fix the problem, take your decoder to Multichoice for testing. If your decoder is insured, you will get it replaced free of charge. If your decoder is not the problem, give us a call on 021 200 1537 and we can send out one of our DStv technicians to restore your lost signal.`,
   },
   {
-    slug: "best-position-to-mount-tv-on-wall",
+    slug: "best-position-to-mount-your-tv-on-the-wall",
     title: "Best Position To Mount Your TV On The Wall",
     excerpt:
       "Tips and advice on choosing the best position for mounting your TV on the wall, covering height, viewing angle, and room layout.",
@@ -132,7 +132,7 @@ There really is no wrong answer when it comes to the best position to mount your
 Whatever option you choose, Cape Direct Connect offers professional TV wall mounting services in Cape Town. Contact us on 021 200 1537 for a free quote.`,
   },
   {
-    slug: "benefits-of-communal-dstv-installation",
+    slug: "benefits-of-a-communal-dstv-installation",
     title: "Benefits Of A Communal DStv Installation",
     excerpt:
       "Discover the advantages of communal DStv installations for apartment buildings, estates, and multi-unit developments in Cape Town.",
@@ -177,7 +177,7 @@ Many estates and apartment complexes have rules against individual satellite dis
 Cape Direct Connect offers professional communal DStv installation services across Cape Town. Contact us on 021 200 1537 for a site assessment and quote.`,
   },
   {
-    slug: "dstv-installation-for-hotels",
+    slug: "dstv-installer-for-hotels",
     title: "DStv Installation For Hotels In Cape Town",
     excerpt:
       "Professional DStv installation solutions for hotels, B&Bs, and guest houses in Cape Town with TV distribution systems.",
@@ -210,7 +210,7 @@ Whatever your TV Distribution System requirement, we have a solution for you.
 Contact us on 021 200 1537 for a free consultation and quote on your hotel DStv installation.`,
   },
   {
-    slug: "dstv-relocation-service-guide",
+    slug: "moving-with-ease-a-clients-tale-of-dstvs-stellar-relocation-service",
     title: "Moving With Ease: DStv Relocation Service Guide",
     excerpt:
       "Everything you need to know about relocating your DStv installation when moving to a new home in Cape Town.",
@@ -251,7 +251,7 @@ Cape Direct Connect has been relocating DStv installations across Cape Town for 
 Contact us on 021 200 1537 for a free DStv relocation quote.`,
   },
   {
-    slug: "role-of-dstv-in-modern-home-entertainment",
+    slug: "the-role-of-dstv-in-modern-home-entertainment",
     title: "The Role of DStv in Modern Home Entertainment",
     excerpt:
       "Exploring how DStv continues to play a central role in South African home entertainment alongside streaming services.",
@@ -295,7 +295,7 @@ As technology evolves, DStv continues to adapt. With internet-enabled decoders, 
 For professional DStv installation and setup in Cape Town, contact Cape Direct Connect on 021 200 1537.`,
   },
   {
-    slug: "fixed-dstv-signal-issue-khayelitsha",
+    slug: "fixed-dstv-signal-issue-in-khayelitsha",
     title: "Case Study: Fixed DStv Signal Issue E48-32 Error In Khayelitsha",
     excerpt:
       "How Cape Direct Connect diagnosed and fixed a DStv signal issue caused by a busted LNB in Mandela Park, Khayelitsha.",
@@ -336,7 +336,7 @@ We replaced the LNB with a new one and signal was restored immediately. We also 
 If you have signal problems with your DStv that you need help with, call us on 021 200 1537 or click on the WhatsApp icon to send us a quick message.`,
   },
   {
-    slug: "dstv-installer-observatory",
+    slug: "dstv-installation-observatory",
     title: "DStv Installer In Observatory, Cape Town",
     excerpt:
       "Professional DStv installation, repairs, and TV wall mounting services in Observatory and surrounding areas.",
@@ -374,7 +374,7 @@ We offer professional TV wall mounting services with concealed cabling. Whether 
 Contact us on 021 200 1537 for an obligation-free quote on DStv services in Observatory.`,
   },
   {
-    slug: "dstv-installation-kenilworth",
+    slug: "dstv-installation-in-kenilworth",
     title: "DStv Installation In Kenilworth, Cape Town",
     excerpt:
       "Accredited DStv installation, repairs, and signal troubleshooting services in Kenilworth and the Southern Suburbs.",
@@ -526,7 +526,7 @@ Extends, tilts, and swivels for maximum flexibility. Great for open-plan living 
 Contact us on 021 200 1537 for a free quote on TV wall mounting in Durbanville.`,
   },
   {
-    slug: "dstv-installer-george",
+    slug: "dstv-installer-in-george",
     title: "DStv Installer In George, Western Cape",
     excerpt:
       "Professional DStv installation and signal repairs in George and surrounding Garden Route areas.",
@@ -569,7 +569,7 @@ Free-to-air satellite TV installation with no monthly subscription fees.
 Contact us on 021 200 1537 for DStv services in George and the Garden Route.`,
   },
   {
-    slug: "dstv-installer-riversdale-stilbaai-mossel-bay",
+    slug: "dstv-installer-in-riversdale-stilbaai-and-mossel-bay",
     title: "DStv Installer In Riversdale, Stilbaai And Mossel Bay",
     excerpt:
       "Accredited DStv installation, repairs, and signal troubleshooting in Riversdale, Stilbaai, and Mossel Bay areas.",
@@ -614,5 +614,382 @@ We cater for all your DStv Installation needs from Single Point DStv Installatio
 - Heidelberg
 
 Contact Cape Direct Connect on 021 200 1537 for DStv services in the Overberg and Garden Route.`,
+  },
+  {
+    slug: "elevate-your-entertainment-and-security-cape-direct-connects-dstv-and-cctv-solutions-in-vermont-western-cape",
+    title: "DStv and CCTV Solutions in Vermont, Western Cape",
+    excerpt:
+      "Cape Direct Connect provides DStv installation, repairs, upgrades, TV wall mounting, and CCTV installation services to the Vermont community.",
+    date: "2024-01-23",
+    category: "Service Areas",
+    content: `Cape Direct Connect is proud to offer professional DStv installation, repairs, upgrades, TV wall mounting, and CCTV installation services to the Vermont community. With over 10 years of experience, our team of highly skilled and certified technicians is dedicated to providing top-notch services that meet the highest standards of quality and customer satisfaction.
+
+We are a 24 hour company, which means you can rely on Cape Direct Connect to come and assist you with your DStv needs at any given hour of the day. Cape Direct Connect caters for both residential and commercial DStv installation and repairs in Vermont.
+
+## Vermont Experts for DStv and CCTV
+
+Residents and business owners of beautiful Vermont, Western Cape, it is time to take your entertainment and security to the next level. Look no further than Cape Direct Connect, your trusted local source for all things DStv and CCTV.
+
+We specialize in installations, repairs, upgrades, TV wall mounting, and robust security camera systems.
+
+## Our DStv Services in Vermont
+
+- New DStv Installations (Single View, XtraView, Triple View)
+- DStv Signal Repairs and Troubleshooting
+- DStv Decoder Upgrades
+- LNB Replacement and Cable Repairs
+- DStv Relocation Services
+
+## CCTV Installation in Vermont
+
+Protect your home or business with our professional CCTV installation service. We supply and install high-quality security camera systems with remote viewing capabilities.
+
+Call Cape Direct Connect on 021 200 1537 for DStv and CCTV services in Vermont.`,
+  },
+  {
+    slug: "elevate-your-riversonderend-experience-dstv-tv-mounting-and-smart-security-with-cape-direct-connect",
+    title: "DStv, TV Mounting, and Smart Security In Riversonderend",
+    excerpt:
+      "Cape Direct Connect offers DStv installation, TV mounting, and smart security solutions for residents and businesses in Riversonderend.",
+    date: "2024-02-02",
+    category: "Service Areas",
+    content: `Cape Direct Connect: Your Riversonderend Entertainment and Security Specialists
+
+If you are looking to take your home entertainment to the next level or give your security a serious upgrade, Cape Direct Connect has your back. We are the go-to experts for all things DStv, TV mounting, and CCTV.
+
+We are a 24 hour company, which means you can rely on Cape Direct Connect to come and assist you with your DStv needs at any given hour of the day. Cape Direct Connect caters for both residential and commercial DStv installation and repairs in Riversonderend.
+
+## DStv Services in Riversonderend
+
+Whether you are a sports fanatic, a movie buff, or all about the news, we make sure your DStv is working its best. Our team handles:
+
+- New Installations Done Right: No more setup headaches! We get you up and running quickly with the perfect DStv package.
+- Fixing Those Glitches: Fuzzy picture, wonky sound? Our repairs get your favourite shows back on track fast.
+- Upgrade Time: Want to move from DStv Compact to Premium? We handle the whole upgrade process.
+
+## TV Wall Mounting in Riversonderend
+
+Get that sleek, modern look with professional TV wall mounting. We ensure your TV is mounted securely at the perfect viewing angle.
+
+## Smart Security Solutions
+
+Keep your property safe with our CCTV installation services. Remote monitoring, night vision, and professional installation.
+
+Call Cape Direct Connect on 021 200 1537 for services in Riversonderend.`,
+  },
+  {
+    slug: "swellendam-dstv-tv-mounting-cctv-solutions",
+    title: "DStv, TV Mounting, & CCTV Solutions in Swellendam",
+    excerpt:
+      "Cape Direct Connect provides one-stop entertainment and security solutions in Swellendam including DStv, TV mounting, and CCTV.",
+    date: "2024-02-01",
+    category: "Service Areas",
+    content: `Swellendam One-Stop Entertainment and Security Shop
+
+Looking for reliable DStv installation, TV wall mounting, or CCTV security solutions in Swellendam? Cape Direct Connect has been serving the Swellendam community with professional satellite TV and security services.
+
+We are a 24 hour company, which means you can rely on Cape Direct Connect to come and assist you with your DStv needs at any given hour of the day.
+
+## DStv Services in Swellendam
+
+- Single View DStv Installation
+- DStv XtraView and Triple View Setup
+- DStv Signal Repairs
+- DStv Decoder Upgrades
+- LNB and Cable Repairs
+
+## TV Wall Mounting
+
+Professional TV wall mounting services in Swellendam. We mount all TV sizes securely with concealed cables for a clean, modern finish.
+
+## CCTV Security Installation
+
+Protect your home or business with our comprehensive CCTV installation service. We supply and install camera systems with remote viewing from your phone.
+
+Contact Cape Direct Connect on 021 200 1537 for DStv, TV mounting, and CCTV services in Swellendam.`,
+  },
+  {
+    slug: "cape-direct-connect-woodstocks-ultimate-choice-for-dstv-tv-wall-mounting-services",
+    title: "Woodstock's Ultimate Choice for DStv & TV Wall Mounting Services",
+    excerpt:
+      "Professional DStv installation and TV wall mounting services in Woodstock, Cape Town by Cape Direct Connect.",
+    date: "2023-10-03",
+    category: "Service Areas",
+    content: `Cape Direct Connect: Woodstock's Ultimate Choice for DStv and TV Wall Mounting Services
+
+Looking for reliable DStv installation or professional TV wall mounting in Woodstock? Cape Direct Connect is your trusted local service provider offering comprehensive satellite TV and home entertainment solutions.
+
+## DStv Installation in Woodstock
+
+Whether you need a brand new DStv installation or want to upgrade your existing setup, our experienced technicians are ready to help. We offer:
+
+- Single View DStv Installation
+- DStv XtraView Setup (watch different channels on multiple TVs)
+- DStv Triple View Installation
+- Communal DStv Installation for apartments and complexes
+
+## TV Wall Mounting in Woodstock
+
+Transform your living space with professional TV wall mounting. Our team ensures:
+
+- Secure mounting on any wall type (brick, drywall, concrete)
+- Concealed cable management for a clean finish
+- Optimal viewing angle positioning
+- All TV sizes from 32 inches to 85 inches
+
+## DStv Repairs in Woodstock
+
+Experiencing signal issues, decoder problems, or damaged cables? Our repair services include:
+
+- E48-32 Signal Error Fixes
+- LNB Replacement
+- Cable and Connector Repairs
+- Decoder Troubleshooting
+
+Call Cape Direct Connect on 021 200 1537 for DStv and TV wall mounting services in Woodstock.`,
+  },
+  {
+    slug: "dstv-installation-repairs-tv-installation-services-in-franschhoek",
+    title: "DStv Installation Services In Franschhoek",
+    excerpt:
+      "Cape Direct Connect provides professional DStv installation, repairs, and TV installation services in Franschhoek and surrounding areas.",
+    date: "2022-08-06",
+    category: "Service Areas",
+    content: `DStv Installation, Repairs and TV Installation Services In Franschhoek
+
+Are you having trouble or looking for a DStv Installer In Franschhoek? Do not worry, our team is here to help. Whether you have some technical difficulties or looking to set up a new DStv Installation or maybe you need an expert TV Installation company, our team of experts is here to help with any of your audio visual needs.
+
+## DStv Installation Services
+
+If you are looking for a professional installation service or if you need your DStv upgraded, then look no further. At Cape Direct Connect, we have years of experience with DStv Installations and can ensure that your DStv Decoder and Satellite Dish will be installed quickly and correctly. We offer both residential and commercial DStv Installation, from single view to DStv ExtraView installation.
+
+## DStv Repair Services
+
+Are you having trouble with your DStv Installation set up? Is it not recognizing your network? Are you experiencing buffering issues or poor signal quality? Our team of experts can help diagnose and fix any issue you may be having with your DStv.
+
+## TV Wall Mounting in Franschhoek
+
+Want to mount your TV on the wall for a sleek, modern look? Our expert team provides professional TV wall mounting services in Franschhoek.
+
+Call Cape Direct Connect on 021 200 1537 for DStv services in Franschhoek.`,
+  },
+  {
+    slug: "dstv-installer-and-repairs-in-plumstead",
+    title: "DStv Installer and Repairs In Plumstead",
+    excerpt:
+      "Cape Direct Connect offers professional DStv installation and repair services in Plumstead, Cape Town including XtraView, signal repairs, and TV wall mounting.",
+    date: "2022-08-27",
+    category: "Service Areas",
+    content: `Plumstead DStv Installer and Repairs
+
+When it comes to getting the most out of your television experience, the options are endless. So if you are looking for a way to maximize your viewing potential in Plumstead, Cape Direct Connect DStv Installation company is the perfect service for you! With our experienced technicians on hand, we can help you get your DStv Installation set up exactly how you want it.
+
+## DStv XtraView Installation Services
+
+Cape Direct Connect offers Plumstead DStv Installer and Repair Services. If you are experiencing any problems with your DStv XtraView, our team can help resolve the issue. We have years of experience in the television industry, so we know how to properly install and repair DStv XtraView.
+
+## DStv Single View Installation Services
+
+Cape Direct Connect is a leading installer and repair service for DStv in the Plumstead area. We offer a wide range of services, including DStv Single View Installation. Our experienced team can install your DStv Single View system quickly and efficiently.
+
+## DStv Repairs in Plumstead
+
+Experiencing signal issues, error codes, or decoder problems? Our repair team is available 24/7 to diagnose and fix any DStv-related issues in Plumstead.
+
+Call Cape Direct Connect on 021 200 1537 for DStv services in Plumstead.`,
+  },
+  {
+    slug: "dstv-installer-and-dstv-repairs-in-atlantic-seaboard-cape-town",
+    title: "DStv Installer And DStv Repairs In Atlantic Seaboard Cape Town",
+    excerpt:
+      "Cape Direct Connect provides DStv installation and repairs covering Greenpoint, Bantry Bay, Sea Point, Clifton, Camps Bay, Bakoven, Llandudno and Hout Bay.",
+    date: "2020-01-16",
+    category: "Service Areas",
+    content: `DStv Installer in Atlantic Seaboard covering Greenpoint, Bantry Bay, Sea Point, Clifton, Camps Bay, Bakoven, Oudekral, Llandudno and Hout Bay.
+
+Whatever your DStv Installation or DStv Repairs are, Cape Direct Connect has a team of DStv Installers ready to assist you right now. Choosing us as your DStv Installer will ensure that you get the best DStv Installers in the Western Cape.
+
+## Our Services in Atlantic Seaboard
+
+- Single View DStv Installer
+- Triple View DStv Installer
+- Communal DStv Installer
+- Hotel DStv Installer
+- DStv Upgrades
+- DStv Relocation
+- DStv Repairs
+- DStv Signal Loss Repairs
+- LNB Upgrades and Repairs
+- OVHD Installation and Repairs
+- StarSat Installation and Repairs
+- CCTV Installation and Repairs
+
+## Single View DStv Installer Atlantic Seaboard
+
+Looking for a DStv Installer, well look no further. Cape Direct Connect is a highly rated DStv Installer providing professional and reliable DStv Installation and DStv Repairs. We provide you with a DStv Decoder if you do not already have one, or we can come and install a DStv Decoder you have already purchased.
+
+Choosing Cape Direct Connect as your Single View DStv Installer will ensure that you will never have DStv Signal Related problems caused by poor workmanship.
+
+Call us now on 021 200 1537 to get a DStv Installation Obligation Free Quote or simply click on the WhatsApp icon to chat with us.`,
+  },
+  {
+    slug: "dstv-installer-pinehurst",
+    title: "DStv Installer Pinehurst",
+    excerpt:
+      "Professional DStv installation and repair services in Pinehurst by Cape Direct Connect, covering all satellite TV needs.",
+    date: "2022-08-26",
+    category: "Service Areas",
+    content: `DStv Installation And Repair Services In Pinehurst
+
+If you are in need of installation or repair services for your DStv, then you have come to the right place. At Cape Direct Connect, we will help you with everything from setting up your new DStv to repairing any issues that may have arisen. We are here to serve you, and we are confident that we can help you get the most out of your DStv experience.
+
+## Our Services in Pinehurst
+
+- DStv Installation
+- DStv Repair
+- DStv Troubleshooting
+- DStv Setup
+- DStv Antenna Installation
+- DStv Cable Installation
+- DStv Aerial Installation
+
+## DStv Repair Services In Pinehurst
+
+Do you have a DStv in Pinehurst that is not working? Have you been trying to troubleshoot the issue on your own? Let Cape Direct Connect help! We offer a wide range of services to keep your DStv uninterrupted. We can install and repair your DStv quickly and efficiently, no matter what the issue might be.
+
+Call Cape Direct Connect on 021 200 1537 for DStv services in Pinehurst.`,
+  },
+  {
+    slug: "dstv-installer-in-yzerfontein",
+    title: "DStv Installer In Yzerfontein",
+    excerpt:
+      "Cape Direct Connect provides accredited DStv installation, repairs, upgrades, and TV wall mounting services in Yzerfontein and surrounding areas.",
+    date: "2024-02-06",
+    category: "Service Areas",
+    content: `DSTV Installer In Yzerfontein
+
+Looking for a reliable and accredited DStv installer in Yzerfontein, Darling, Langebaan, Saldanha Bay, Pearl Bay, Grotto Bay, or surrounding areas? Look no further than Cape Direct Connect! We are your one-stop shop for all your satellite TV needs, offering professional installation, repairs, upgrades, and more.
+
+## Why Choose Cape Direct Connect
+
+- Accredited DStv Installer: We are fully qualified and authorized to handle all your DStv requirements, ensuring quality and peace of mind.
+- Expert Services: Our team of experienced technicians can handle everything from initial installations to complex repairs and upgrades.
+- Local Expertise: We have in-depth knowledge of the Yzerfontein area and its specific DStv reception challenges.
+
+## Our Services
+
+- DStv Installation (new connections and additional points)
+- DStv Repairs (signal faults, faulty equipment, etc.)
+- LNB Upgrade or Replacement
+- DStv Cable Repairs
+- TV Wall Mounting
+- DStv Relocation (moving your existing setup)
+
+Call Cape Direct Connect on 021 200 1537 for DStv services in Yzerfontein.`,
+  },
+  {
+    slug: "dstv-installer-in-atlantis",
+    title: "DStv Installer In Atlantis",
+    excerpt:
+      "Professional DStv installation and repair services in Atlantis by Cape Direct Connect, covering residential and commercial needs.",
+    date: "2022-08-15",
+    category: "Service Areas",
+    content: `DStv Installation Services In Atlantis
+
+If you are looking for installation services in Atlantis by Cape Direct Connect, then you have come to the right place! We offer professional installation services that will make sure your DStv is set up and working properly in no time at all.
+
+## DStv Repairs In Atlantis
+
+We also offer repair services for any DStv issues you may be experiencing. Whether it is a signal problem, a faulty decoder, or a damaged cable, our experienced technicians can diagnose and fix the issue quickly.
+
+## Our Services in Atlantis
+
+- DStv Single View Installation
+- DStv XtraView and Triple View Setup
+- DStv Signal Repairs
+- LNB Replacement and Cable Repairs
+- DStv Decoder Upgrades
+- TV Wall Mounting
+- OVHD Installation
+
+Call Cape Direct Connect on 021 200 1537 for DStv services in Atlantis.`,
+  },
+  {
+    slug: "tv-wall-mounting-and-aerial-installer-in-cape-town",
+    title: "TV Mounting And Aerial Installer In Cape Town",
+    excerpt:
+      "Professional TV wall mounting and aerial installation services across Cape Town by Cape Direct Connect.",
+    date: "2020-01-07",
+    category: "How-To Guide",
+    content: `TV Mounting And Aerial Installer In Cape Town
+
+Cape Direct Connect offers professional TV wall mounting and aerial installation services across Cape Town. Whether you need a new TV mounted on your wall or an aerial installed for better reception, our team of experienced technicians is ready to help.
+
+## TV Wall Mounting Services
+
+Our TV wall mounting service includes:
+
+- Secure mounting on any wall type (brick, drywall, concrete)
+- Concealed cable management for a clean, modern look
+- Optimal viewing angle positioning
+- All TV sizes from 32 inches to 85 inches
+- Bracket supply and installation
+
+## Aerial Installation
+
+Need better TV reception? Our aerial installation service covers:
+
+- Digital aerial installation
+- Signal testing and optimization
+- Aerial repairs and replacements
+- Multi-point aerial distribution
+
+## Why Choose Cape Direct Connect for TV Mounting
+
+- Over 10 years of experience
+- Professional and tidy installations
+- Affordable pricing
+- Same-day service available
+- Fully insured
+
+Call Cape Direct Connect on 021 200 1537 for TV wall mounting and aerial installation in Cape Town.`,
+  },
+  {
+    slug: "dstv-installation-and-repairs-in-cape-town-during-lockdown",
+    title: "DStv Installation and Repairs In Cape Town During Lockdown",
+    excerpt:
+      "Cape Direct Connect continued to provide essential DStv installation and repair services in Cape Town during the lockdown period.",
+    date: "2020-07-15",
+    category: "News",
+    content: `DStv Installation and Repairs In Cape Town During Lockdown
+
+During the lockdown period, Cape Direct Connect continued to provide essential DStv installation and repair services to residents across Cape Town. We understood that with everyone staying at home, reliable television entertainment was more important than ever.
+
+## Essential Services During Lockdown
+
+Our technicians followed all COVID-19 safety protocols including:
+
+- Wearing masks and gloves at all times
+- Sanitizing equipment before and after each job
+- Maintaining social distancing
+- Contactless payment options
+
+## Services We Provided During Lockdown
+
+- Emergency DStv signal repairs
+- Decoder replacements
+- New DStv installations for work-from-home setups
+- LNB and cable repairs
+
+## Post-Lockdown Services
+
+As restrictions eased, we expanded our services back to full capacity including:
+
+- Full DStv installations (Single View, XtraView, Triple View)
+- TV wall mounting
+- CCTV installation
+- OVHD and StarSat installation
+
+Contact Cape Direct Connect on 021 200 1537 for all your DStv needs in Cape Town.`,
   },
 ];
