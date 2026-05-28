@@ -19,7 +19,7 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
         >
           <button
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
-            className="w-full text-left px-6 py-4 flex justify-between items-center gap-4 hover:bg-gray-50 transition"
+            className="w-full text-left px-6 py-4 flex justify-between items-center gap-4 hover:bg-gray-50 transition focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
           >
             <span className="font-semibold text-gray-900">{item.question}</span>
             <svg
