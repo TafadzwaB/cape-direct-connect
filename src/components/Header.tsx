@@ -1,23 +1,43 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { PHONE, PHONE_HREF, BUSINESS_NAME } from "@/data/siteData";
 
-const navLinks = [
-  { href: "/", label: "Home" },
+const serviceLinks = [
   { href: "/dstv-installation", label: "DStv Installation" },
   { href: "/dstv-repairs", label: "DStv Repairs" },
   { href: "/signal-repairs", label: "Signal Repairs" },
   { href: "/extraview-setup", label: "ExtraView Setup" },
   { href: "/tv-wall-mounting", label: "TV Wall Mounting" },
   { href: "/ovhd-installation", label: "OVHD Installation" },
+];
+
+const mainLinks = [
+  { href: "/", label: "Home" },
   { href: "/areas-we-cover", label: "Areas We Cover" },
+  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const dropdownRef = useRef<HTMLLIElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(e.target as Node)
+      ) {
+        setServicesOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -41,16 +61,62 @@ export default function Header() {
 
         {/* Desktop nav */}
         <ul className="hidden lg:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 transition"
+          {/* Home */}
+          <li>
+            <Link
+              href="/"
+              className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 transition"
+            >
+              Home
+            </Link>
+          </li>
+
+          {/* Services dropdown */}
+          <li ref={dropdownRef} className="relative">
+            <button
+              onClick={() => setServicesOpen(!servicesOpen)}
+              className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 transition inline-flex items-center gap-1"
+            >
+              Services
+              <svg
+                className={`w-4 h-4 transition-transform ${servicesOpen ? "rotate-180" : ""}`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                {link.label}
-              </Link>
-            </li>
-          ))}
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {servicesOpen && (
+              <ul className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50">
+                {serviceLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      onClick={() => setServicesOpen(false)}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+
+          {/* Other top-level links (skip Home since already rendered) */}
+          {mainLinks
+            .filter((l) => l.href !== "/")
+            .map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-700 hover:bg-blue-50 transition"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
         </ul>
 
         {/* CTA + Hamburger */}
@@ -81,17 +147,62 @@ export default function Header() {
       {mobileOpen && (
         <div className="lg:hidden border-t bg-white">
           <ul className="px-4 py-2 space-y-1">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+            <li>
+              <Link
+                href="/"
+                onClick={() => setMobileOpen(false)}
+                className="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+              >
+                Home
+              </Link>
+            </li>
+
+            {/* Mobile services accordion */}
+            <li>
+              <button
+                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                className="w-full flex items-center justify-between px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+              >
+                Services
+                <svg
+                  className={`w-4 h-4 transition-transform ${mobileServicesOpen ? "rotate-180" : ""}`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {mobileServicesOpen && (
+                <ul className="pl-4 space-y-1 mt-1">
+                  {serviceLinks.map((link) => (
+                    <li key={link.href}>
+                      <Link
+                        href={link.href}
+                        onClick={() => setMobileOpen(false)}
+                        className="block px-3 py-2 rounded-md text-gray-600 hover:bg-blue-50 hover:text-blue-700 transition text-sm"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+
+            {mainLinks
+              .filter((l) => l.href !== "/")
+              .map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
           </ul>
         </div>
       )}

@@ -12,6 +12,7 @@ import {
   WHATSAPP,
   BUSINESS_NAME,
 } from "@/data/siteData";
+import { blogPosts } from "@/data/blogPosts";
 
 export const metadata: Metadata = {
   title: {
@@ -208,8 +209,50 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Latest Blog Posts */}
       <section className="py-16 md:py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Latest From Our Blog
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              DStv tips, troubleshooting guides, and news to help you get the
+              most out of your satellite TV.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {blogPosts.slice(0, 3).map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="block bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition"
+              >
+                <span className="text-xs font-medium text-blue-600">
+                  {post.category}
+                </span>
+                <h3 className="font-bold text-gray-900 mt-1 mb-2 line-clamp-2">
+                  {post.title}
+                </h3>
+                <p className="text-sm text-gray-600 line-clamp-2">
+                  {post.excerpt}
+                </p>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center">
+            <Link
+              href="/blog"
+              className="text-blue-700 font-semibold hover:underline"
+            >
+              View all articles →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

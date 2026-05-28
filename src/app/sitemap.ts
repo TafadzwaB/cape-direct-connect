@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next";
+import { blogPosts } from "@/data/blogPosts";
 
 const BASE_URL = "https://capedirectconnect.co.za";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
+  const staticRoutes = [
     "",
     "/dstv-installation",
     "/dstv-repairs",
@@ -12,13 +13,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tv-wall-mounting",
     "/ovhd-installation",
     "/areas-we-cover",
+    "/blog",
     "/contact",
   ];
 
-  return routes.map((route) => ({
+  const staticEntries: MetadataRoute.Sitemap = staticRoutes.map((route) => ({
     url: `${BASE_URL}${route}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
-    priority: route === "" ? 1 : 0.8,
+    priority: route === "" ? 1 : route === "/blog" ? 0.9 : 0.8,
   }));
+
+  const blogEntries: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  return [...staticEntries, ...blogEntries];
 }
